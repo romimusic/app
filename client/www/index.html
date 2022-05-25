@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src '*' data: content:;"> 
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jqueryForMobile.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/index.js"></script>
+    <title>Scanner v1.0</title>
+  </head>
+  <body>
+    <div data-role="page" id="home" class="container">
+      <!--Home page-->
+
+      <header data-role="header" class="header">
+        <h1 class="header__title">COIT20269 Assessment 1</h1>
+        <button class="hamburger" > ADMIN</button>
+        <nav class="menuppal">
+          <ul style="margin-top: 40px;">
+            <li id="deleteLocalData">Delete Local Data</li>
+            <li id="deleteCloudData">Delete Cloud Data</li>
+          </ul>
+        </nav>
+      </header><!-- /header -->	
+
+      <div data-role="content">
+        <h3>Barcorde Scanner</h3>
+
+        <button id="scan" class="ui-btn ui-shadow-icon ui-btn-b">SCAN</button>
+        <a href="#p2" id="showLocalData" class="ui-btn ui-shadow-icon ui-btn-b"
+          >DISPLAY LOCAL DATA</a
+        >
+        <button id="uploadData" class="ui-btn ui-shadow-icon ui-btn-b">
+          UPLOAD TO CLOUD
+        </button>
+        <a href="#p3" id="showCloudData" class="ui-btn ui-shadow-icon ui-btn-b"
+          >DISPLAY CLOUD DATA</a
+        >
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>Romina Ingallina &copy; 2021</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page home -->
+
+    <div data-role="page" id="p2" class="container">
+      <!--page display local data-->
+
+      <div data-role="header">
+        <a
+          href="#home"
+          class="
+            ui-btn
+            ui-shadow
+            ui-corner-all
+            ui-btn-icon-left
+            ui-icon-home
+            ui-btn-b
+          "
+          style="padding-top: 10px"
+          >home</a
+        >
+        <h1>Local Data</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content">
+        <h3>Local Data</h3>
+
+        <table
+          data-role="table"
+          id="temp-table"
+          data-mode="reflow"
+          class="ui-responsive table-stroke"
+        >
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Product Type</th>
+              <th>Product Description</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTable"></tbody>
+        </table>
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>Romina Ingallina &copy; 2021</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page 2 -->
+
+    <div data-role="page" id="p3" class="container">
+      <!--page display cloud data-->
+
+      <div data-role="header">
+        <a
+          href="#home"
+          class="
+            ui-btn
+            ui-shadow
+            ui-corner-all
+            ui-btn-icon-left
+            ui-icon-home
+            ui-btn-b
+          "
+          style="padding-top: 10px"
+          >home</a
+        >
+        <h1>cloud Data</h1>
+      </div>
+      <!-- /header -->
+
+      <div data-role="content">
+        <h3>Cloud Data</h3>
+
+        <table
+          data-role="table"
+          id="temp-table"
+          data-mode="reflow"
+          class="ui-responsive table-stroke"
+        >
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Product Type</th>
+              <th>Product Description</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTable2"></tbody>
+        </table>
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer">
+        <h4>Romina Ingallina &copy; 2021</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page 2 -->
+    <script src="cordova.js"></script>
+  </body>
+</html>

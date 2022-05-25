@@ -1,0 +1,28 @@
+[
+
+{
+    "productID" : 1 ,  
+    "productName": "Clarinet",
+    "productType": "Sopran", 
+    "productCoverURL":"Buffet-Crampon-Legende-A-Clarinet.jpeg", 
+    "productDescription":"The clarinet is a family of woodwind instruments. It has a single-reed mouthpiece, a straight, cylindrical tube with an almost cylindrical bore, and a flared bell. A person who plays a clarinet is called a clarinetist (sometimes spelled clarinettist)." 
+},
+
+{
+    "productID" : 2 ,  
+    "productName": "Bass Clarinet",
+    "productType": "Bass", 
+    "productCoverURL":"clarinete-bajo-en-resina.jpeg", 
+    "productDescription":"The bass clarinet is a musical instrument of the clarinet family. Like the more common soprano B♭ clarinet, it is usually pitched in B♭ (meaning it is a transposing instrument on which a written C sounds as B♭), but it plays notes an octave below the soprano B♭ clarinet." 
+},
+
+{
+    "productID" : 3 ,  
+    "productName": "Clarinet accesories",
+    "productType": "Accesories", 
+    "productCoverURL":"accesories-clarinet.jpeg", 
+    "productDescription":"Clarinet Reeds, Clarinet Mouthpieces, Clarinet Mouthpiece Cases, Clarinet Cases, Clarinet Ligatures, Clarinet Stands, Clarinet Neck Straps, Swabs & Cloths." 
+}
+
+
+]
